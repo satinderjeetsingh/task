@@ -1,0 +1,22 @@
+<!--<app-nav-menu></app-nav-menu>-->
+
+<!-- Example single danger button -->
+<div *ngIf = "!router.url.includes('Timeline-Chart')">
+<hr>
+<button class = "btn btn-danger" style="float : right" routerLink = "">Back</button>
+  
+<div   class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Click
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" routerLink = "/AmCharts">AmChart</a>
+    <a class="dropdown-item" routerLink = "/Chart-js">Chart-JS</a>
+    <a class="dropdown-item" routerLink = "/D3">D3</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" routerLink = "/Login">Login</a>
+  </div>
+</div>
+
+</div>
+<router-outlet></router-outlet>
